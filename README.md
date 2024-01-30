@@ -47,3 +47,8 @@ cd YOLOv6/
 python3.8 -m venv ~/dev/YOLOv6/.YOLOv6
 source .YOLOv6/bin/activate
 ```
+
+# VS code
+```
+open settings -> Keyboard Shortcuts: set "alt+LeftArraow" for the Go Back command
+```
