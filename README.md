@@ -50,5 +50,7 @@ source .YOLOv6/bin/activate
 
 # VS code
 ```
-open settings -> Keyboard Shortcuts: set "alt+LeftArraow" for the Go Back command
+open settings -> Keyboard Shortcuts:
+set "alt+LeftArraow" for the Go Back command
+set "alt+RightArrow" for the go Forward command
 ```
