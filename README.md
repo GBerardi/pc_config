@@ -54,3 +54,35 @@ open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command
 set "alt+RightArrow" for the go Forward command
 ```
+
+# mount remote file system
+```
+#!/bin/bash
+
+mkdir /mnt/name1
+mkdir /mnt/name2
+
+script_path="$(dirname "$0")"
+echo ${script_path}
+if grep -qs '/mnt/name1' /proc/mounts; then
+        sudo umount -l -f /mnt/name1
+        sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 gberardi@name1:/ /mnt/name1
+else
+        sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 gberardi@name1:/ /mnt/name1
+fi
+
+#echo "Mount name1 to /mnt/name1"
+#sudo umount -l -f /mnt/name1
+
+#echo "Mount name2 to /mnt/name2"
+if grep -qs '/mnt/name2' /proc/mounts; then
+        sudo umount -l -f /mnt/name2
+        sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 gberardi@name2:/ /mnt/name2
+else
+        sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 gberardi@name2:/ /mnt/name2
+fi
+
+
+
+echo "Done, in background"
+```
