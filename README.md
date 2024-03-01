@@ -86,3 +86,11 @@ fi
 
 echo "Done, in background"
 ```
+
+# ssh tunnel
+```
+# example: you start a tensorboard on pincopallo remote server and on port remoteport, you can't access it
+# from your local machine but you can access it with ssh from your local machine, you can do a forward to
+# make the service on pincopallo:remoteport available at 127.0.0.1:6006 from local browser
+ssh gberardi@pincopallo -N -f -L remoteport:127.0.0.1:6006
+```
