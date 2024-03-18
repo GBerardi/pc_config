@@ -46,6 +46,8 @@ git clone https://github.com/meituan/YOLOv6 ~/dev/
 cd YOLOv6/
 python3.8 -m venv ~/dev/YOLOv6/.YOLOv6
 source .YOLOv6/bin/activate
+# if necessary install requirements
+pip install -r requirements.txt
 ```
 
 # VS code
