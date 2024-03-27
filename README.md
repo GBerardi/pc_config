@@ -96,3 +96,8 @@ echo "Done, in background"
 # make the service on pincopallo:remoteport available at 127.0.0.1:6006 from local browser
 ssh gberardi@pincopallo -N -f -L localport:127.0.0.1:remote_port
 ```
+
+# install .deb files from shell
+```
+sudo dpkg -i nomefile.deb
+```
