@@ -51,10 +51,18 @@ pip install -r requirements.txt
 ```
 
 # VS code
+
+## keyboard settings
 ```
 open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command
 set "alt+RightArrow" for the go Forward command
+```
+
+## debugging with arguments
+```
+open run -> add configuration --> python with arguments
+a file will open, no need to modify it, next f5 will ask for arguments
 ```
 
 # mount remote file system
