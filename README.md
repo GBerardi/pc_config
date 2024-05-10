@@ -114,7 +114,7 @@ echo "Done, in background"
 ssh gberardi@pincopallo -N -f -L localport:127.0.0.1:remote_port
 ```
 
-# install .deb files from shell
+## install .deb files from shell
 ```
 sudo dpkg -i nomefile.deb
 ```
