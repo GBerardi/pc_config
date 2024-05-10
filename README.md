@@ -2,6 +2,12 @@
 
 Content
 - [install vim](#install-vim)
+- [ls colors](#ls-colors)
+- [install venv](#install-venv)
+- [repo in venv](#repo-in-venv)
+- [VS code](#vs-code)
+- [mount remote file system](#mount-remote-file-system)
+- [ssh tunnel](#ssh-tunnel)
 
 ## install vim
 sudo apt install vim
@@ -43,7 +49,7 @@ install venv with the correct version of python
 sudo apt-get install python3.8-venv
 ```
 
-## clone a repo, create the virtual env and activate the virtual env
+## repo in venv
 ```
 git clone https://github.com/meituan/YOLOv6 ~/dev/
 cd YOLOv6/
