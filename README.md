@@ -1,9 +1,12 @@
 # pc_config
 
-# install vim
+Content
+- [install vim](#install-vim)
+
+## install vim
 sudo apt install vim
 
-# terminal colors
+## terminal colors
 ```
 vim ~/.bashrc
 ```
@@ -19,7 +22,7 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 ```
 (changing "[\033[00;33m\]\w" with "[\033[01;33m\]\w")
 
-# ls colors
+## ls colors
 ```
 vim ~/.bashrc
 ```
@@ -28,7 +31,7 @@ add
 LS_COLORS=$LS_COLORS:'di=1;37:' ; export LS_COLORS
 ```
 
-# install venv
+## install venv
 install the python version needed for your venv
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -40,7 +43,7 @@ install venv with the correct version of python
 sudo apt-get install python3.8-venv
 ```
 
-# clone a repo, create the virtual env and activate the virtual env
+## clone a repo, create the virtual env and activate the virtual env
 ```
 git clone https://github.com/meituan/YOLOv6 ~/dev/
 cd YOLOv6/
@@ -50,22 +53,22 @@ source .YOLOv6/bin/activate
 pip install -r requirements.txt
 ```
 
-# VS code
+## VS code
 
-## keyboard settings
+### keyboard settings
 ```
 open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command
 set "alt+RightArrow" for the go Forward command
 ```
 
-## debugging with arguments
+### debugging with arguments
 ```
 open run -> add configuration --> python with arguments
 ```
 a file will open, no need to modify it, next f5 will ask for arguments
 
-# mount remote file system
+## mount remote file system
 ```
 #!/bin/bash
 
@@ -97,7 +100,7 @@ fi
 echo "Done, in background"
 ```
 
-# ssh tunnel
+## ssh tunnel
 ```
 # example: you start a tensorboard on pincopallo remote server and on port remoteport, you can't access it
 # from your local machine but you can access it with ssh from your local machine, you can do a forward to
