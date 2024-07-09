@@ -2,12 +2,12 @@
 
 Content
 - [install vim](#install-vim)
+- [terminal colors](#terminal-colors)
 - [ls colors](#ls-colors)
 - [install venv](#install-venv)
 - [repo in venv](#repo-in-venv)
 - [VS code](#vs-code)
 - [mount remote file system](#mount-remote-file-system)
-- [ssh tunnel](#ssh-tunnel)
 
 ## install vim
 sudo apt install vim
@@ -104,17 +104,4 @@ fi
 
 
 echo "Done, in background"
-```
-
-## ssh tunnel
-```
-# example: you start a tensorboard on pincopallo remote server and on port remoteport, you can't access it
-# from your local machine but you can access it with ssh from your local machine, you can do a forward to
-# make the service on pincopallo:remoteport available at 127.0.0.1:6006 from local browser
-ssh gberardi@pincopallo -N -f -L localport:127.0.0.1:remote_port
-```
-
-## install .deb files from shell
-```
-sudo dpkg -i nomefile.deb
 ```
