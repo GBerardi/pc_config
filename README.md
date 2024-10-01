@@ -66,6 +66,8 @@ pip install -r requirements.txt
 open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command
 set "alt+RightArrow" for the go Forward command
+"ctrl + k ctrl + c" comment lines
+"ctrl + k ctrl + u" uncomment lines
 ```
 
 ### debugging with arguments
