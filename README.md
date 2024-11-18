@@ -66,6 +66,7 @@ pip install -r requirements.txt
 open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command ("ctrl + alt + -" as default)
 set "alt+RightArrow" for the go Forward command
+
 remember (deafalut settings):
 "Ctrl + k Ctrl + c" comment lines
 "Ctrl + k Ctrl + u" uncomment lines
