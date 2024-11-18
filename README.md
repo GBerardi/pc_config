@@ -67,8 +67,12 @@ open settings -> Keyboard Shortcuts:
 set "alt+LeftArraow" for the Go Back command ("ctrl + alt + -" as default)
 set "alt+RightArrow" for the go Forward command
 remember (deafalut settings):
-"ctrl + k ctrl + c" comment lines
-"ctrl + k ctrl + u" uncomment lines
+"Ctrl + k Ctrl + c" comment lines
+"Ctrl + k Ctrl + u" uncomment lines
+"Ctrl + Alt + -" Go Back
+"Ctrl + Shift + -" Go Forward
+"use the pause while debugging to stop and see where the code is in the bottom left window"
+"a second window in the bommot left also show actual breakpoints"
 ```
 
 ### debugging with arguments
